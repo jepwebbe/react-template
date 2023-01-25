@@ -11,7 +11,7 @@ const GetList = (e) => {
     })
 }
 
-const Get = (e, id) => {
+const Get = (e) => {
     return axios.get(`${API_URL}/${BASEURL}/${e}`, {
         headers: authHeader(),
     })

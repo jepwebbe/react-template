@@ -1,8 +1,9 @@
 import React from 'react'
+import { GridOne } from '../../Styles/GridOne'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <GridOne>Home</GridOne>
   )
 }
 

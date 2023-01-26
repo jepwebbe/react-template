@@ -1,6 +1,6 @@
 export const Theme = {
   colors: {
-    primaryBg: "blue",
+    primaryBg: "beige",
   },
   breakpoints: {
     xs: "320px",

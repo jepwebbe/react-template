@@ -21,7 +21,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header header" "main main" "footer footer";
 }
-
 img {
     display: block;
     max-width: 100%;

@@ -1,22 +1,28 @@
-import { useEffect, useState } from 'react'
-import appService from '../Components/App/Appservices/AppService';
-
+import { useEffect, useState } from "react";
+import appService from "../Components/App/Appservices/AppService";
+// takes endpoint, id and a path key to fetch a single item
 const useGetByIdApiDataFromEndpoint = (endpoint, id, key) => {
-    const [state, setState] = useState([]);
-    useEffect(() => {
-        const renderData = async () => {    
-          try {
-            const response = await appService.GetDetails(endpoint, id);
-            if (response.data) {
-              key && setState(response.data[key]);
-            }
-          } catch (error) {
-            console.error(error);
-          }
-        };
-        renderData();
-      }, [endpoint, id, key]);
-  return {state}
-}
+  // state holds the information later on fetched with axios through appService
+  const [state, setState] = useState([]);
+  // using useEffect to fetch data from the props passed to the component.
+  useEffect(() => {
+    // it uses async to let other code run while the api request is completed
+    const renderData = async () => {
+      try {
+        const response = await appService.GetDetails(endpoint, id);
+        // if there is a response, it sets it to state or else returns an error
+        if (response.data) {
+          key && setState(response.data[key]);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    renderData();
+      // returns the state
 
-export default useGetByIdApiDataFromEndpoint
+  }, [endpoint, id, key]);
+  return { state };
+};
+
+export default useGetByIdApiDataFromEndpoint;

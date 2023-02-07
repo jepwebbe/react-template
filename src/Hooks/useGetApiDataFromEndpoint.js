@@ -19,4 +19,4 @@ const useGetApiDataFromEndpoint = (endpoint, key) => {
   return {state}
 }
 
-export default useGetApiDataFromEnpoint
+export default useGetApiDataFromEndpoint

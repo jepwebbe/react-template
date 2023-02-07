@@ -1,18 +1,18 @@
 import React from "react";
-import { GridOne } from "../../../Styles/GridOne";
-import { FooterStyled } from "../../../Styles/Styled.Footer";
-import { HeroStyled } from "../../../Styles/Styled.Hero";
-import { HomeStyled } from "../../../Styles/Styled.Home";
-import { MainStyled } from "../../../Styles/Styled.Main";
+import { Page } from "../../../Styles/Layout/Page";
+import { HomeStyled } from "./Styled.Home";
 
 const Home = () => {
   return (
-    <GridOne>
-      <HomeStyled>Header</HomeStyled>
-      <HeroStyled>Hero</HeroStyled>
-      <MainStyled>Main</MainStyled>
-      <FooterStyled>Footer</FooterStyled>
-    </GridOne>
+    <Page title="Hjem" description="Dette er hjem">
+      <HomeStyled>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+      </HomeStyled>
+    </Page>
   );
 };
 

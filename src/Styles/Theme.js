@@ -9,21 +9,20 @@ export const Theme = {
     l: "992px",
     xl: "1200px",
   },
-  mobile: {
+  desktop: {
     rows: "auto auto 1fr auto",
-    columns: "1fr",
+    columns: "repeat(3, 1fr)",
     area: `
-      "header"
-      "hero"
-      "main"
-      "footer"
-            `,
+    "a a a"
+    "b c c"
+    "b d d"
+    "e e e"
+              `,
   },
-  mobileTwo: {
+  desktopTwo: {
     rows: "",
     columns: "",
     area: `
-              
               `,
   },
   tablet: {
@@ -42,20 +41,21 @@ export const Theme = {
     area: `
               `,
   },
-  desktop: {
+  mobile: {
     rows: "auto auto 1fr auto",
     columns: "1fr",
     area: `
-    "header"
-    "hero"
-    "main"
-    "footer"
-              `,
+      "header"
+      "hero"
+      "main"
+      "footer"
+            `,
   },
-  desktopTwo: {
+  mobileTwo: {
     rows: "",
     columns: "",
     area: `
+              
               `,
   },
 };

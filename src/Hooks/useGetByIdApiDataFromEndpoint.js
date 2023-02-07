@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import appService from '../Components/App/Appservices/AppService';
 
-const useGetByIdApiDataFromEnpoint = (endpoint, id, key) => {
+const useGetByIdApiDataFromEndpoint = (endpoint, id, key) => {
     const [state, setState] = useState([]);
     useEffect(() => {
         const renderData = async () => {    

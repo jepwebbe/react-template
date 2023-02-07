@@ -6,9 +6,10 @@ export const GridOne = ({ children }) => {
     >{children}</StyledGrid>
   );
 };
-const StyledGrid = styled.div`
+const StyledGrid = styled.main`
   height: 100%;
   display: grid;
+  grid-area: main;
   background-color: ${props => props.theme.colors.primaryBg};
   grid-template-columns: ${props => props.theme.mobile.columns};
   grid-template-rows: ${props => props.theme.mobile.rows};

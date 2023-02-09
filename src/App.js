@@ -5,7 +5,8 @@ import { Header } from "./Components/Partials/Header/Header";
 import { GlobalStyles } from "./Styles/Global";
 
 import { Theme } from "./Styles/Theme";
-
+/* The app component that taks the themeprovider to pass the theme, the globalstyles,
+the site-wide components and the pages in the router */
 function App() {
   return (
     <ThemeProvider theme={Theme}>

@@ -1,3 +1,4 @@
+// The theme object holding values that can be accessed globally by styled-components
 export const Theme = {
   colors: {
     primaryBg: "beige",

@@ -4,7 +4,7 @@ import appService from "../Components/App/Appservices/AppService";
 const useGetByIdApiDataFromEndpoint = (endpoint, id, key) => {
   // state holds the information later on fetched with axios through appService
   const [state, setState] = useState([]);
-  // using useEffect to fetch data from the props passed to the component.
+  // using useEffect to run it when de. array changes, fetches data from the props passed to the component.
   useEffect(() => {
     // it uses async to let other code run while the api request is completed
     const renderData = async () => {

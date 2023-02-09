@@ -5,10 +5,10 @@ import { GrClose } from "react-icons/gr";
 import { NavStyled } from "./Styled.Nav";
 
 export const Nav = () => {
-  // sets the burgermenu to true, if window width is larger than 768
+  // Set the burgermenu to true, if window width is larger than 768
   const burgerWidth = "768"
   const [burgermenu, setBurgermenu] = useState(window.innerWidth >= burgerWidth);
-  // change the value of the burgermenu state to the opposite
+  // Change the value of the burgermenu state to the opposite, if window width..
   const showBurgermenu = () => {
     if (window.innerWidth <= burgerWidth) { 
     setBurgermenu(!burgermenu)};

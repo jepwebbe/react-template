@@ -14,7 +14,7 @@ const Page = (props) => {
         .setAttribute("content", description);
     }
   }, [title, description]);
-
+// Applies the styled grid, which in turn takes its grid values from the theme, centrally defining the grid
   return <StyledGrid> {children} </StyledGrid>;
 };
 

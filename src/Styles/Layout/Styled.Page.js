@@ -6,6 +6,7 @@ export const StyledGrid = styled.main`
   >:first-child {
     height: 100%;
     display: grid;
+    gap: 0.5rem;
     background-color: ${(props) => props.theme.colors.primaryBg};
     grid-template-columns: ${(props) => props.theme.mobile.columns};
     grid-template-rows: ${(props) => props.theme.mobile.rows};

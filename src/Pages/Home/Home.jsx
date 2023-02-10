@@ -1,5 +1,5 @@
 import React from "react";
-import { Page } from "../../../Styles/Layout/Page";
+import { Page } from "../../Styles/PageTemplate/Page";
 import { HomeStyled } from "./Styled.Home";
 
 const Home = () => {

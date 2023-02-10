@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { About } from "../../Pages/About";
-import { Contact } from "../../Pages/Contact";
-import Home from "../../Pages/Home/Home";
-import { NotFound } from "../../Pages/NotFound";
-import { Products } from "../../Pages/Products";
+import { About } from "../../../Pages/About";
+import { Contact } from "../../../Pages/Contact";
+import Home from "../../../Pages/Home/Home";
+import { NotFound } from "../../../Pages/NotFound";
+import { Products } from "../../../Pages/Products";
 // Defines the routes via the react-router-dom routing
 const Router = () => {
   return (

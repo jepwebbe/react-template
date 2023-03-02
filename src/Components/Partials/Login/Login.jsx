@@ -59,7 +59,7 @@ const Login = (forward) => {
             placeholder="brugernavn"
           />
           {errors.username && errors.username.type === "required" && (
-            <span>Dette felt skal udfyldes</span>
+            <span>Udfyld venligst dit brugernavn</span>
           )}
 
           <input

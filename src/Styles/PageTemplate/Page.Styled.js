@@ -1,13 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledGrid = styled.main`
+  padding: 0 1rem;
   grid-area: main;
+  background-color: ${(props) => props.theme.colors.primaryBg};
   height: 100%;
-  >:first-child {
+  > :first-child {
     height: 100%;
     display: grid;
     gap: 0.5rem;
-    background-color: ${(props) => props.theme.colors.primaryBg};
     grid-template-columns: ${(props) => props.theme.mobile.columns};
     grid-template-rows: ${(props) => props.theme.mobile.rows};
     grid-template-areas: ${(props) => props.theme.mobile.area};

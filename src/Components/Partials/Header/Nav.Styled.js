@@ -18,6 +18,9 @@ export const NavStyled = styled.nav`
       color: black;
     }
   }
+  ul .active {
+    background-color: ${(props) => props.theme.colors.primaryBg};
+  }
   @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     button {
       display: block;

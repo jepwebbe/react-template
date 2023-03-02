@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderStyled } from "./Styled.Header";
+import { HeaderStyled } from "./Header.Styled";
 import { Nav } from "./Nav";
 
 export const Header = () => {

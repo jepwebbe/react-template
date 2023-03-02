@@ -11,19 +11,26 @@ export const Theme = {
     xl: "1200px",
   },
   desktop: {
-    rows: "auto auto 1fr auto",
-    columns: "repeat(3, 1fr)",
+    rows: "auto auto 1fr auto auto",
+    columns: "repeat(6, auto)",
     area: `
-    "a a a"
-    "b c c"
-    "b d d"
-    "e e e"
+    "a a a a a a"
+    "b b b b b b"
+    "c c c c c c"
+    "d d d d d d"
+    "e e e e e e"
               `,
   },
   desktopTwo: {
-    rows: "",
-    columns: "",
-    area: `
+    rows: "auto 1fr auto",
+    columns: "4fr 1fr",
+    area: `"a a" "b c" "d d"
+              `,
+  },
+  desktopThree: {
+    rows: "auto 1fr",
+    columns: "4fr 1fr",
+    area: `"a a" "b b"
               `,
   },
   tablet: {
@@ -37,10 +44,14 @@ export const Theme = {
               `,
   },
   tabletTwo: {
-    rows: "",
-    columns: "",
-    area: `
-              `,
+  rows: "auto auto 1fr auto",
+  columns: "repeat(2, auto)",
+  area: `
+    "a a"
+    "b b"
+    "c c"
+    "d d"
+            `,
   },
   mobile: {
     rows: "auto auto 1fr auto auto",
@@ -54,10 +65,13 @@ export const Theme = {
               `,
   },
   mobileTwo: {
-    rows: "",
-    columns: "",
+    rows: "auto auto 1fr auto",
+    columns: "repeat(2, auto)",
     area: `
-              
+      "a a"
+      "b b"
+      "c c"
+      "d d"
               `,
-  },
+    },
 };

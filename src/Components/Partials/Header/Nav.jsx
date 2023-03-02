@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-import { NavStyled } from "./Styled.Nav";
+import { NavStyled } from "./Nav.Styled";
 
 export const Nav = () => {
   // Set the burgermenu to true, if window width is larger than 768
@@ -20,24 +20,24 @@ export const Nav = () => {
       </button>
       <ul style={{ display: burgermenu ? "flex" : "none" }}>
         <li>
-          <Link to="/" onClick={showBurgermenu}>
+          <NavLink to="/" onClick={showBurgermenu}>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={showBurgermenu}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" onClick={showBurgermenu}>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link to="/products" onClick={showBurgermenu}>
+          <NavLink to="/products" onClick={showBurgermenu}>
             Products
-          </Link>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" onClick={showBurgermenu}>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" onClick={showBurgermenu}>
+            Contact
+          </NavLink>
         </li>
       </ul>
     </NavStyled>

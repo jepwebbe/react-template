@@ -32,4 +32,9 @@ li {
 a {
     text-decoration: none;
 }
+@media (max-width: ${(props) => props.theme.breakpoints.m}) {
+    html {
+        font-size: 12px;
+    }
+}
 `

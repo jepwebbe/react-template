@@ -14,6 +14,9 @@ export const NavStyled = styled.nav`
     gap: 1rem;
     justify-content: center;
     padding: 0;
+    li a {
+      color: black;
+    }
   }
   @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     button {

@@ -12,7 +12,11 @@ const Login = (forward) => {
   const { setLoggedIn, loggedIn, username } = useLoginStore();
 
   // destructures the useForm
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   // function that manages the login request, takes the submitdata from the form as parameter
   const onSubmit = (submitdata) => {
     // async function using the appService to make a login request,
@@ -54,6 +58,10 @@ const Login = (forward) => {
             autoComplete="username"
             placeholder="brugernavn"
           />
+          {errors.username && errors.username.type === "required" && (
+            <span>Dette felt skal udfyldes</span>
+          )}
+
           <input
             {...register("password", { required: true })}
             type="password"
